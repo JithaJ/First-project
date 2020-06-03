@@ -1,0 +1,69 @@
+<div class="card bg-light">
+    <div class="card-body text-center">
+        <div class="col-md-12">
+            <div class="row">
+              <div class="logo">
+                 <h1><img  src="assets/logo1.jpg" alt=""><strong>LOGO</strong></h1>
+              </div>   
+             <form class="container">
+               <div class="form-group"> 
+                 <div class="email">
+                    <label for="eMail">Email</label>
+                        <input 
+                        required
+                        minlenth ="8" 
+                        maxlength="50"
+                        ngModel =""
+                        [ngModelOptions]="{standalone: true}"
+                        #eMail="ngModel"
+                        (change)="log(eMail)"           
+                        id="eMail"
+                        type="text" 
+                        class="form-control">
+                        <div
+                            class="alert imp-alert"
+                            *ngIf="eMail.touched && !eMail.valid">Email is required!
+                        </div>  
+                 </div>
+        
+                </div>
+                <div class="form-group">
+                  <div class="password">
+                    <label for="PassWord">Password</label>
+                    <input 
+                    required
+                    minlength="6"
+                    maxlength="15"
+                    ngModel =""
+                    [ngModelOptions]="{standalone: true}"
+                    #passWord="ngModel"
+                    (change)="log(passWord)"
+                    id='passWord' 
+                    type="passWord" 
+                    class="form-control">
+                    <div
+                      class="alert imp-alert"
+                      *ngIf="passWord.touched && !passWord.errors.minlenth"> Password must contain six letters!
+                    </div>
+                  </div>    
+                </div> 
+                <div class="checkbox">
+                    <input type="checkbox"> Keep in signed in
+                </div>
+                <div class="button">
+                    <button class="btn btn-primary">Sign in</button>
+                </div>
+                </form>
+                <div class="fp">
+                    <a href=""><h6><svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="11" height="9" x="2.5" y="7" rx="2"/>
+                        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                      </svg> Forgot Password</h6></a>
+                </div>
+            </div>
+        </div>            
+        
+        
+        
+    </div>
+</div>

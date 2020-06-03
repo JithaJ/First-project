@@ -1,0 +1,66 @@
+.card{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 500px;
+}
+.container{
+  padding-top:10px ;
+}
+
+.logo {
+    padding-top: 1px;
+    margin-left: 300px;
+    font-size: large;
+    
+}
+.logo{
+
+  margin-left: 500px;
+  
+  }
+.logo img{
+  margin-top: 2px;
+  height: 100px;
+  width: 100px;
+  margin-left: -500px;
+}
+.logo h1{
+  font-size: 20px;
+}
+.form-group .email label{
+
+  margin-right: 380px;
+}
+.form-group .password label{
+
+  margin-right: 350px;
+}
+.form-control.ng-touched{
+    border: 2px solid red;
+}
+.container .checkbox{
+  margin-left: -275px;
+  
+}
+.button{
+    padding-top: 20px;
+}
+
+.button .btn{
+
+    width: 420px;
+    background-color: black;
+}
+.fp{
+  padding-top:30px;
+  margin-left:170px;
+  }
+.fp h6{
+   color:black;
+
+}
+
+
