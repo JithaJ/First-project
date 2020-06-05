@@ -1,3 +1,7 @@
+.body{
+
+  background-color:rgba(248,248,251,1) ;
+}
 .card{
   position: absolute;
   left: 50%;
@@ -5,6 +9,10 @@
   transform: translate(-50%, -50%);
   height: 594.66px;
   width: 516.68px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.bg-light{
+  background-color: #ffffff!important;
 }
 
 .container .logo-text{
@@ -14,24 +22,34 @@
 }
 
 .container .logo-img{
- 
+
 top: 207px;
 left: 962px;
 width: 216px;
 height: 212px;
 margin-right: 742.6px;
+padding-top: 1px;
 
 }
+
 .container .email label{
   
   margin-right: 500px;
+  
+}
+.container .email .alert{
+  font-size: 13px;
+  color: red;
 }
  .container .password label{
 
   margin-right: 500px;
 
  }
-
+ .container .password .alert{
+  font-size: 13px;
+  color: red;
+}
  .container .checkbox{
    margin-right: 300px;
    
@@ -48,5 +66,13 @@ margin-right: 742.6px;
  }
  .fp{
     margin-top: 10px;
-    color:black;
+    color:#555555;
+    letter-spacing: 0px;
  }
+
+.fp img{
+    margin-right: 5px;
+}
+.fp a{
+  color: #555555;
+}

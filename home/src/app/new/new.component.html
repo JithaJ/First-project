@@ -1,75 +1,75 @@
-<div class="card bg-light">
-    <div class="card-body text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-               <div class="logo-text">
-                 <h1><strong>LOGO</strong></h1>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="logo-img">
-                  <img  src="assets/logo1.svg" alt="">
-                </div>
+<body>
+  <div class="card bg-light">
+      <div class="card-body text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="logo-text">
+                  <h1><strong>LOGO</strong></h1>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="logo-img">
+                    <img  src="assets/logo1.svg" alt="">
+                  </div>
+              </div>
             </div>
           </div>
-        </div>
-        
-             <form class="container">
-               
-                  <div class="form-group"> 
-                    <div class="email">
-                        <label for="eMail">Email</label>
-                            <input 
-                            required
-                            minlenth ="8" 
-                            maxlength="50"
-                            ngModel =""
-                            [ngModelOptions]="{standalone: true}"
-                            #eMail="ngModel"
-                            (change)="log(eMail)"           
-                            id="eMail"
-                            type="text" 
-                            class="form-control">
-                            <div
-                                class="alert imp-alert"
-                                *ngIf="eMail.touched && !eMail.valid">Email is required!
-                            </div>  
-                    </div>
-            
-                  </div>
-                <div class="form-group">
-                  <div class="password">
-                    <label for="PassWord">Password</label>
-                    <input 
-                    required
-                    minlength="6"
-                    maxlength="15"
-                    ngModel =""
-                    [ngModelOptions]="{standalone: true}"
-                    #passWord="ngModel"
-                    (change)="log(passWord)"
-                    id='passWord' 
-                    type="passWord" 
-                    class="form-control">
-                    <div
-                      class="alert imp-alert"
-                      *ngIf="passWord.touched && !passWord.errors.minlenth"> Password must contain six letters!
-                    </div>
-                  </div>    
-                </div> 
+          
+              <form class="container">
                 
-                  <div class="checkbox">
-                      <input type="checkbox"> Keep in signed in
-                  </div>
-                  <div class="button">
-                      <button class="btn btn-primary">Sign in</button>
-                  </div>
-               
-            </form>
-            <div class="fp">
-              <img  src="assets/img-2" alt=""><h6> Forgot Password?</h6>
-            </div>
-            
-   </div>
-</div>
+                    <div class="form-group"> 
+                      <div class="email">
+                          <label for="eMail">Email</label>
+                              <input 
+                              required
+                              ngModel =""
+                              [ngModelOptions]="{standalone: true}"
+                              #eMail="ngModel"
+                              (change)="log(eMail)"           
+                              id="eMail"
+                              type="text" 
+                              class="form-control">
+                              <div
+                                  class="alert imp-alert"
+                                  *ngIf="eMail.touched && !eMail.valid">Email is required!
+                              </div>  
+                      </div>
+              
+                    </div>
+                  <div class="form-group">
+                    <div class="password">
+                      <label for="PassWord">Password</label>
+                      <input 
+                      required
+                      minlength="6"
+                      maxlength="15"
+                      ngModel =""
+                      [ngModelOptions]="{standalone: true}"
+                      #passWord="ngModel"
+                      (change)="log(passWord)"
+                      id='passWord' 
+                      type="passWord" 
+                      class="form-control">
+                      <div
+                        class="alert imp-alert"
+                        *ngIf="passWord.touched && !passWord.errors.minlenth"> Password must contain six letters!
+                      </div>
+                    </div>    
+                  </div> 
+                  
+                    <div class="checkbox">
+                        <input type="checkbox"> Keep in signed in
+                    </div>
+                    <div class="button">
+                        <button class="btn btn-primary">Sign in</button>
+                    </div>
+                
+              </form>
+              <div class="fp">
+              <a href=""><h6><img  src="assets/img-2.svg" alt=""><strong> Forgot Password?</strong></h6></a>
+              </div>
+              
+    </div>
+  </div>
+</body>
