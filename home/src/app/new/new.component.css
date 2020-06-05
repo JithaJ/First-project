@@ -1,66 +1,52 @@
 .card{
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
-  width: 500px;
-}
-.container{
-  padding-top:10px ;
+  height: 594.66px;
+  width: 516.68px;
 }
 
-.logo {
-    padding-top: 1px;
-    margin-left: 300px;
-    font-size: large;
-    
+.container .logo-text{
+  color: #555555;
+  font: Black 35px/53px Poppins;
+  margin-top: 100px;
 }
-.logo{
 
-  margin-left: 500px;
+.container .logo-img{
+ 
+top: 207px;
+left: 962px;
+width: 216px;
+height: 212px;
+margin-right: 742.6px;
+
+}
+.container .email label{
   
-  }
-.logo img{
-  margin-top: 2px;
-  height: 100px;
-  width: 100px;
-  margin-left: -500px;
+  margin-right: 500px;
 }
-.logo h1{
-  font-size: 20px;
-}
-.form-group .email label{
+ .container .password label{
 
-  margin-right: 380px;
-}
-.form-group .password label{
+  margin-right: 500px;
 
-  margin-right: 350px;
+ }
+
+ .container .checkbox{
+   margin-right: 300px;
+   
+ }
+.container .button{
+
+  padding-top: 10px;
 }
-.form-control.ng-touched{
-    border: 2px solid red;
-}
-.container .checkbox{
-  margin-left: -275px;
+ .container .button .btn{
+
+  background-color: black;
+  width: 450px;
   
-}
-.button{
-    padding-top: 20px;
-}
-
-.button .btn{
-
-    width: 420px;
-    background-color: black;
-}
-.fp{
-  padding-top:30px;
-  margin-left:170px;
-  }
-.fp h6{
-   color:black;
-
-}
-
-
+ }
+ .fp{
+    margin-top: 10px;
+    color:black;
+ }
